@@ -1,0 +1,139 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+   	<ImageView
+          android:id="@+id/picture_user"
+          android:layout_width="116dp"
+          android:layout_height="116dp"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="30dp"
+          android:src="@drawable/ic_user_picture" />
+  
+   	<TextView
+           android:id="@+id/description_user"
+           android:layout_width="175dp"
+           android:layout_height="63dp"
+           android:layout_marginLeft="120dp"
+           android:layout_marginTop="80dp"
+           android:text="@string/descripcion_robert"
+           android:textAppearance="?android:attr/textAppearanceSmall" />
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="200dp"
+           android:layout_height="50dp"
+           android:layout_marginLeft="120dp"
+           android:layout_marginTop="30dp"
+           android:text="@string/name_robert"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+       
+       <ImageView
+            android:id="@+id/logo_facebook"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/ic_facebook" />
+       
+
+       <ImageView
+            android:id="@+id/logo_twitter"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/ic_twitter" />
+       
+                
+       <ImageView
+            android:id="@+id/logo_google"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/ic_googleplus" />
+       
+      <ImageView
+            android:id="@+id/logo_foursquare"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/ic_foursquare" />
+       
+      <ImageView
+            android:id="@+id/logo_instagram"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/ic_instagram" />
+         
+      <ImageView
+            android:id="@+id/logo_pinterest"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/ic_pinterest" />
+      
+       <TextView
+             android:id="@+id/amount_friends"
+             android:layout_width="70dp"
+             android:layout_height="50dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="200dp"
+             android:text="@string/amount_friends"
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+         
+      
+       <TextView
+              android:id="@+id/amount_checksin"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginLeft="70dp"
+              android:layout_marginTop="200dp"
+              android:text="@string/amount_checkins"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+         
+       <TextView
+              android:id="@+id/historial_eventos"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="260dp"
+              android:text="@string/historial_eventos"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textStyle="bold" />
+          
+		<TextView
+		    android:id="@+id/Eventos_asistir"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="160dp"
+		    android:layout_marginTop="260dp"
+		    android:text="@string/eventos_asistir"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textStyle="bold" />
+
+	 <ListView
+        android:id="@+id/listaeventos"
+        android:layout_width="290dp"
+		android:layout_height="230dp"
+		android:layout_marginLeft="0dp"
+		android:layout_marginTop="300dp"
+        tools:listitem="@layout/item_evento" >
+
+    </ListView>
+
+   	
+</FrameLayout>
