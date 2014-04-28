@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" 
+        android:title="@string/menu_settings"/>
+      
+    <item 
+        android:id="@+id/profile_user"
+        android:title="@string/profile_user"
+        android:icon="@drawable/ic_user_picture"
+        android:showAsAction="ifRoom"
+        android:onClick="gotoProfileUser"/>
+    
+    <item 
+        android:id="@+id/add_event"
+        android:title="@string/add_event"
+        android:icon="@android:drawable/ic_input_add"
+        android:showAsAction="ifRoom"
+        android:onClick="gotoAddEvent"/>
+    
+    <item 
+        android:id="@+id/logout"
+        android:title="@string/log_out"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:showAsAction="ifRoom"
+        android:onClick="logOut"/>
+</menu>
