@@ -1,0 +1,1 @@
+Estos son los métodos del API que se ofrecen como backend para Going On.
