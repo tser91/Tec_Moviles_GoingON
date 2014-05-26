@@ -30,6 +30,7 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+/*
 import br.com.condesales.EasyFoursquareAsync;
 import br.com.condesales.listeners.AccessTokenRequestListener;
 import br.com.condesales.listeners.FoursquareVenueDetailsResquestListener;
@@ -37,6 +38,7 @@ import br.com.condesales.listeners.UserInfoRequestListener;
 import br.com.condesales.models.User;
 import br.com.condesales.models.Venue;
 import br.com.condesales.tasks.users.UserImageRequest;
+*/
 
 /**
  * Activity which displays a login screen to the user, offering registration as
@@ -45,7 +47,7 @@ import br.com.condesales.tasks.users.UserImageRequest;
 //public class LoginUserActivity extends FragmentActivity implements AccessTokenRequestListener  {
 public class LoginUserActivity extends FragmentActivity  {
 
-	private EasyFoursquareAsync async;
+	//private EasyFoursquareAsync async;
 
 
 	private FbLoginFragment fbLoginFragment;

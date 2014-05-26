@@ -1,0 +1,176 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <TextView
+            android:id="@+id/add_event_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/add_event_progress"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <ScrollView
+        android:id="@+id/sigin_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@color/orange" >
+        
+         <LinearLayout
+             android:id="@+id/innercontainer"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/orange"
+             android:orientation="vertical"
+             tools:context=".MainActivity" >
+
+             <TextView
+                 android:id="@+id/textView_add_event"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:text="@string/create_event"
+                 android:textAppearance="?android:attr/textAppearanceLarge" />
+
+             <EditText
+                 android:id="@+id/editText_event_name"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:ems="10"
+                 android:hint="@string/event_name_editText" />
+
+             <EditText
+                 android:id="@+id/editText_event_price"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:ems="10"
+                 android:hint="@string/event_price" />
+
+             <EditText
+                 android:id="@+id/editText_event_descr"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:ems="10"
+                 android:hint="@string/event_description"
+                 android:inputType="textMultiLine" />
+
+             <MultiAutoCompleteTextView
+                 android:id="@+id/editText_event_location"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_marginTop="10dp"
+                 android:ems="20"
+                 android:hint="@string/event_location" />
+
+
+
+             <TextView
+                 android:id="@+id/textView_select_event_categorie"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_marginTop="10dp"
+                 android:text="@string/select_event_categorie"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+             <Spinner
+                 android:id="@+id/spinner_categories"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:entries="@array/event_categories_array" />
+
+             <TextView
+                 android:id="@+id/textView_select_event_initial_date"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:text="@string/select_event_initial_date"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+             <DatePicker
+                 android:id="@+id/datePicker_initial_date"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                 android:calendarViewShown="false" />
+
+             <TextView
+                 android:id="@+id/textView_select_event_initial_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:text="@string/select_event_initial_time"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+             <TimePicker
+                 android:id="@+id/timePicker_initial_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal" />
+
+             <TextView
+                 android:id="@+id/textView_select_event_final_date"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:text="@string/select_event_final_date"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+             <DatePicker
+                 android:id="@+id/datePicker_final_date"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                 android:calendarViewShown="false" />
+
+             <TextView
+                 android:id="@+id/textView_select_event_final_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:text="@string/select_event_final_time"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+             <TimePicker
+                 android:id="@+id/timePicker_final_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal" >
+
+                 <Button
+                     android:id="@+id/button_create_event"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="right"
+                     android:text="@string/create_event" />
+
+                 <Button
+                     android:id="@+id/button_cancel_create_event"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="left"
+                     android:text="@string/cancel" />
+             </LinearLayout>
+         </LinearLayout>
+     
+    </ScrollView>
+
+</FrameLayout>

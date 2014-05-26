@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<ImageView
+	    android:id="@+id/image_Evento"
+	    android:layout_width="match_parent"
+	    android:layout_height="200dp"
+	    android:layout_marginLeft="0dp"
+	    android:layout_marginTop="0dp"
+	    android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/nombre_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/event_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descripcion_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#FFFFFF"
+        android:maxLines="2"
+        android:text="@string/event_description"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         />
+
+</FrameLayout>

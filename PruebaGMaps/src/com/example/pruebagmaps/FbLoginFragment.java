@@ -6,12 +6,10 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import android.content.Context;
+import android.app.DownloadManager.Request;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.provider.CalendarContract.Events;
+import android.service.textservice.SpellCheckerService.Session;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -19,9 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.facebook.HttpMethod;
-import com.facebook.Request;
 import com.facebook.Response;
-import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
 import com.facebook.model.GraphObject;

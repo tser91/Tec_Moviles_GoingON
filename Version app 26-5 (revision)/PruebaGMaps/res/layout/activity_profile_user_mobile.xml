@@ -1,0 +1,220 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView_picture_user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:src="@drawable/ic_contact_picture" />
+
+    <TextView
+        android:id="@+id/textView_name_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/nombre_usuario"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_description_user"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/descripcion_usuario"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/GO_light_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/myRectangleViewPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@layout/rectangle_user_stats" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_amount_photos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/amount_photos"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/GO_light_gray" />
+
+                <TextView
+                    android:id="@+id/textView_photos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/photos"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/GO_light_gray" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/myRectangleViewFriends"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@layout/rectangle_user_stats" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_amount_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/amount_friends"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/GO_light_gray" />
+
+                <TextView
+                    android:id="@+id/textView_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/friends"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/GO_light_gray" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/myRectangleViewCheckins"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@layout/rectangle_user_stats" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_amount_checkins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/amount_checkins"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/GO_light_gray" />
+
+                <TextView
+                    android:id="@+id/textView_checkins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/checkins"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/GO_light_gray" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/myRectangleViewCheckins"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@layout/rectangle_tab_profile" />
+
+            <TextView
+                android:id="@+id/textView_historial_eventos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/historial_eventos"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/GO_dark_gray" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/myRectangleViewCheckins"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@layout/rectangle_tab_profile" />
+
+            <TextView
+                android:id="@+id/textView_Eventos_asistir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/eventos_asistir"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/GO_dark_gray" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listaeventos"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/item_evento" >
+    </ListView>
+
+</LinearLayout>
